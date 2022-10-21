@@ -1,0 +1,1 @@
+Proyecto Hold shift to check multiple checkboxes, del curso JavaScript 30 days challenge, día 10.
