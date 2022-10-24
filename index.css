@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&display=swap');
+
+:root,
+body {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(ivan-bandura-_pan-3SEDmI-unsplash.jpg);
+    background-size: cover;
+    font-family: 'Fuzzy Bubbles', cursive;
+    color: black;
+}
+
+body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.globalContainer {
+    margin-left: 3rem;
+}
+
+.checkboxesContainer {
+    background-color: white;
+    opacity: 0.8;
+    padding: 0;
+    margin: 0;
+    border: none;
+    border-radius: 5pt;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 10px 5px 0 rgba(0, 0, 0, 0.5);
+}
+
+.container {
+    border-top: 1px solid black;
+    display: flex;
+
+}
+
+
+input[type="checkbox"] {
+    margin: 10px;
+
+}
+
+input[type="checkbox"]::before {
+    border: 2px solid black;
+}
+
+input[type="checkbox"]:hover {
+    cursor: pointer;
+}
+
+input[type="checkbox"]:focus {
+    outline: none;
+}
+
+label {
+    border-left: 1px solid black;
+    padding: 15px;
+
+}
+
+label:hover {
+    cursor: pointer;
+}
+
+.submit {
+    margin-top: 1rem;
+}
+
+input[type="submit"] {
+    font-family: 'Fuzzy Bubbles', cursive;
+    font-size: 13pt;
+    padding: 10px;
+    border-radius: 5pt;
+    border: none;
+    box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.5);
+}
+
+input[type="submit"]:hover {
+    cursor: pointer;
+    background-color: #D2D79F;
+}
+
+input:checked+label {
+    text-decoration: line-through;
+}
