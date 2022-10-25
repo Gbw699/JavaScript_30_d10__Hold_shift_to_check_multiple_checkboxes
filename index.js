@@ -1,5 +1,3 @@
-//CÓDIGO PROPIO (DEJA DE FUNCIOANR SI SE QUIERE REPETIR LA ACCIÓN CON SHIFT, FUNCIONA UNA SOLA VEZ)
-
 const checkboxes = document.querySelectorAll(
   '.container input[type="checkbox"]'
 );
@@ -9,10 +7,10 @@ checkboxes.forEach((checkbox) =>
   checkbox.addEventListener("click", (e) => {
     if (checkbox.className === "checked") {
       checkbox.className = "";
-      checkbox.removeAttribute("checked");
+      checkbox.checked = false;
     } else {
       checkbox.className = "checked";
-      checkbox.setAttribute("checked", true);
+      checkbox.checked = true;
     }
 
     for (let i = 0; i < checkboxes.length; i++) {
@@ -27,12 +25,12 @@ checkboxes.forEach((checkbox) =>
         if (index > i) {
           for (index; index > i; index--) {
             checkboxes[index].className = "checked";
-            checkboxes[index].setAttribute("checked", true);
+            checkboxes[index].checked = true;
           }
         } else if (index < i) {
           for (index; index < i; index++) {
             checkboxes[index].className = "checked";
-            checkboxes[index].setAttribute("checked", true);
+            checkboxes[index].checked = true;
           }
         } else {
           continue;
